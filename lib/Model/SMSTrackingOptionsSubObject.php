@@ -79,7 +79,7 @@ class SMSTrackingOptionsSubObject implements ModelInterface, ArrayAccess, \JsonS
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'is_add_utm' => true,
 		'utm_params' => true
     ];
@@ -89,7 +89,7 @@ class SMSTrackingOptionsSubObject implements ModelInterface, ArrayAccess, \JsonS
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

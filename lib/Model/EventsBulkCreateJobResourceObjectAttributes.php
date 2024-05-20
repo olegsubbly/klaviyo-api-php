@@ -77,7 +77,7 @@ class EventsBulkCreateJobResourceObjectAttributes implements ModelInterface, Arr
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'events_bulk_create' => false
     ];
 
@@ -86,7 +86,7 @@ class EventsBulkCreateJobResourceObjectAttributes implements ModelInterface, Arr
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

@@ -79,7 +79,7 @@ class GetAccounts400ResponseErrorsInnerSource implements ModelInterface, ArrayAc
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'pointer' => false,
 		'parameter' => false
     ];
@@ -89,7 +89,7 @@ class GetAccounts400ResponseErrorsInnerSource implements ModelInterface, ArrayAc
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

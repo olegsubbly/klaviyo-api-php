@@ -79,7 +79,7 @@ class TagGroupUpdateQueryResourceObjectAttributes implements ModelInterface, Arr
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'name' => false,
 		'return_fields' => true
     ];
@@ -89,7 +89,7 @@ class TagGroupUpdateQueryResourceObjectAttributes implements ModelInterface, Arr
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

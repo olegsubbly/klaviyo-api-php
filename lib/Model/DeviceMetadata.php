@@ -99,7 +99,7 @@ class DeviceMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'device_id' => true,
 		'klaviyo_sdk' => true,
 		'sdk_version' => true,
@@ -119,7 +119,7 @@ class DeviceMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

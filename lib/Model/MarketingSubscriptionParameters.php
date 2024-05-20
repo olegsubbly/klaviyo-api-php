@@ -79,7 +79,7 @@ class MarketingSubscriptionParameters implements ModelInterface, ArrayAccess, \J
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'consent' => false,
 		'consented_at' => true
     ];
@@ -89,7 +89,7 @@ class MarketingSubscriptionParameters implements ModelInterface, ArrayAccess, \J
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

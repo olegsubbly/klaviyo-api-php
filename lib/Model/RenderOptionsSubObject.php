@@ -83,7 +83,7 @@ class RenderOptionsSubObject implements ModelInterface, ArrayAccess, \JsonSerial
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'shorten_links' => true,
 		'add_org_prefix' => true,
 		'add_info_link' => true,
@@ -95,7 +95,7 @@ class RenderOptionsSubObject implements ModelInterface, ArrayAccess, \JsonSerial
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

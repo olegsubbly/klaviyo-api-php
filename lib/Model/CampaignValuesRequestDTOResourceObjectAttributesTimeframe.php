@@ -82,7 +82,7 @@ class CampaignValuesRequestDTOResourceObjectAttributesTimeframe implements Model
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'key' => false,
 		'start' => false,
 		'end' => false
@@ -93,7 +93,7 @@ class CampaignValuesRequestDTOResourceObjectAttributesTimeframe implements Model
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

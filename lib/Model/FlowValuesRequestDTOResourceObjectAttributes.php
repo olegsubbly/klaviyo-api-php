@@ -83,7 +83,7 @@ class FlowValuesRequestDTOResourceObjectAttributes implements ModelInterface, Ar
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'statistics' => false,
 		'timeframe' => false,
 		'conversion_metric_id' => false,
@@ -95,7 +95,7 @@ class FlowValuesRequestDTOResourceObjectAttributes implements ModelInterface, Ar
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

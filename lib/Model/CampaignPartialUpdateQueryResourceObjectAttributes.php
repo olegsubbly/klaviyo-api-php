@@ -85,7 +85,7 @@ class CampaignPartialUpdateQueryResourceObjectAttributes implements ModelInterfa
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'name' => true,
 		'audiences' => false,
 		'send_options' => true,
@@ -98,7 +98,7 @@ class CampaignPartialUpdateQueryResourceObjectAttributes implements ModelInterfa
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

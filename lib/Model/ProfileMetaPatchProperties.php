@@ -81,7 +81,7 @@ class ProfileMetaPatchProperties implements ModelInterface, ArrayAccess, \JsonSe
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'append' => true,
 		'unappend' => true,
 		'unset' => true
@@ -92,7 +92,7 @@ class ProfileMetaPatchProperties implements ModelInterface, ArrayAccess, \JsonSe
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

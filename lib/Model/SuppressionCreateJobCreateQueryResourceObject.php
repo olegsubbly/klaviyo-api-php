@@ -81,7 +81,7 @@ class SuppressionCreateJobCreateQueryResourceObject implements ModelInterface, A
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'type' => false,
 		'attributes' => false,
 		'relationships' => false
@@ -92,7 +92,7 @@ class SuppressionCreateJobCreateQueryResourceObject implements ModelInterface, A
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

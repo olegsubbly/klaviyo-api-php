@@ -81,7 +81,7 @@ class TemplateUpdateQueryResourceObjectAttributes implements ModelInterface, Arr
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'name' => true,
 		'html' => true,
 		'text' => true
@@ -92,7 +92,7 @@ class TemplateUpdateQueryResourceObjectAttributes implements ModelInterface, Arr
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

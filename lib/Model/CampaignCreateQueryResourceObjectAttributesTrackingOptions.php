@@ -84,7 +84,7 @@ class CampaignCreateQueryResourceObjectAttributesTrackingOptions implements Mode
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'is_add_utm' => true,
 		'utm_params' => true,
 		'is_tracking_clicks' => true,
@@ -96,7 +96,7 @@ class CampaignCreateQueryResourceObjectAttributesTrackingOptions implements Mode
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

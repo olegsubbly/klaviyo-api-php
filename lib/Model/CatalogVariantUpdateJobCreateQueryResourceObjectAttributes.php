@@ -77,7 +77,7 @@ class CatalogVariantUpdateJobCreateQueryResourceObjectAttributes implements Mode
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'variants' => false
     ];
 
@@ -86,7 +86,7 @@ class CatalogVariantUpdateJobCreateQueryResourceObjectAttributes implements Mode
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

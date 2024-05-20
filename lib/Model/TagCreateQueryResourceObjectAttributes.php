@@ -77,7 +77,7 @@ class TagCreateQueryResourceObjectAttributes implements ModelInterface, ArrayAcc
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'name' => false
     ];
 
@@ -86,7 +86,7 @@ class TagCreateQueryResourceObjectAttributes implements ModelInterface, ArrayAcc
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization

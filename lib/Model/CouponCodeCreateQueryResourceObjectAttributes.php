@@ -79,7 +79,7 @@ class CouponCodeCreateQueryResourceObjectAttributes implements ModelInterface, A
       *
       * @var boolean[]
       */
-    protected static array $openAPINullables = [
+    protected static $openAPINullables = [
         'unique_code' => false,
 		'expires_at' => true
     ];
@@ -89,7 +89,7 @@ class CouponCodeCreateQueryResourceObjectAttributes implements ModelInterface, A
       *
       * @var boolean[]
       */
-    protected array $openAPINullablesSetToNull = [];
+    protected $openAPINullablesSetToNull = [];
 
     /**
      * Array of property to type mappings. Used for (de)serialization
