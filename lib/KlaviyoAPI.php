@@ -30,33 +30,48 @@ class KlaviyoAPI {
     public $num_retries;
     public $config;
     public $guzzle_options;
+    /** @var \KlaviyoAPI\API\AccountsApi  */
     public $Accounts;
+    /** @var \KlaviyoAPI\API\CampaignsApi  */
     public $Campaigns;
+    /** @var \KlaviyoAPI\API\CatalogsApi  */
     public $Catalogs;
+    /** @var \KlaviyoAPI\API\CouponsApi  */
     public $Coupons;
+    /** @var \KlaviyoAPI\API\DataPrivacyApi  */
     public $DataPrivacy;
+    /** @var \KlaviyoAPI\API\EventsApi  */
     public $Events;
+    /** @var \KlaviyoAPI\API\FlowsApi  */
     public $Flows;
+    /** @var \KlaviyoAPI\API\ImagesApi  */
     public $Images;
+    /** @var \KlaviyoAPI\API\ListsApi  */
     public $Lists;
+    /** @var \KlaviyoAPI\API\MetricsApi  */
     public $Metrics;
+    /** @var \KlaviyoAPI\API\ProfilesApi  */
     public $Profiles;
+    /** @var \KlaviyoAPI\API\ReportingApi  */
     public $Reporting;
+    /** @var \KlaviyoAPI\API\SegmentsApi  */
     public $Segments;
+    /** @var \KlaviyoAPI\API\TagsApi  */
     public $Tags;
+    /** @var \KlaviyoAPI\API\TemplatesApi  */
     public $Templates;
-    
+
 
 
     public function __construct($api_key, $num_retries = 3, $wait_seconds = 3, $guzzle_options = [], $user_agent_suffix = "") {
 
         if (gettype($num_retries) == 'NULL'){
             $num_retries = 3;
-        } 
+        }
 
         if (gettype($wait_seconds) == 'NULL'){
             $wait_seconds = 3;
-        } 
+        }
 
         $this->api_key = $api_key;
         $this->num_retries = $num_retries;
@@ -69,97 +84,97 @@ class KlaviyoAPI {
         $user_agent = $user_agent . $user_agent_suffix;
         $this->config->setUserAgent($user_agent);
 
-        
+
         $this->Accounts = new Subclient(
                 new AccountsApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Campaigns = new Subclient(
                 new CampaignsApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Catalogs = new Subclient(
                 new CatalogsApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Coupons = new Subclient(
                 new CouponsApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->DataPrivacy = new Subclient(
                 new DataPrivacyApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Events = new Subclient(
                 new EventsApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Flows = new Subclient(
                 new FlowsApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Images = new Subclient(
                 new ImagesApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Lists = new Subclient(
                 new ListsApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Metrics = new Subclient(
                 new MetricsApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Profiles = new Subclient(
                 new ProfilesApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Reporting = new Subclient(
                 new ReportingApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Segments = new Subclient(
                 new SegmentsApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Tags = new Subclient(
                 new TagsApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
         $this->Templates = new Subclient(
                 new TemplatesApi(new GuzzleClient($this->guzzle_options),$this->config),
                 $wait_seconds = $this->wait_seconds,
                 $num_retries = $this->num_retries,
             );
-        
+
 
     }
 }
